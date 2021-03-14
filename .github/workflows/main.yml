@@ -1,0 +1,12 @@
+on: [push]
+
+jobs:
+  ci_job:
+    runs-on: ubuntu-latest
+    name: CI
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Compile CI
+        uses: ./ # Uses an action in the root directory
+        id: first step
