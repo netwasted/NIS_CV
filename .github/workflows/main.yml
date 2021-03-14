@@ -9,4 +9,4 @@ jobs:
         uses: actions/checkout@v2
       - name: Compile CI
         uses: ./ # Uses an action in the root directory
-        id: first step
+        id: first_step
