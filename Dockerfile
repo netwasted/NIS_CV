@@ -16,4 +16,4 @@ RUN apt-get update && apt-get install --yes --no-install-recommends \
 
 COPY CV .
 
-ENTRYPOINT pdflatex -interaction=nonstopmode main.tex && /bin/bash
+ENTRYPOINT cd CV && pdflatex -interaction=nonstopmode main.tex && /bin/bash
