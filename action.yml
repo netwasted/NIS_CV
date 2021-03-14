@@ -1,0 +1,5 @@
+name: 'Compile CV'
+description: 'Compile my CV pls'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
